@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'Lobster-Regular';
+  src: url('http://flaresoftware.com/fonts/lobster/Lobster-Regular.eot');
+  src: url('http://flaresoftware.com/fonts/lobster/Lobster-Regular.eot?#iefix') format('embedded-opentype'),
+       url('http://flaresoftware.com/fonts/lobster/Lobster-Regular.svg#Lobster-Regular') format('svg'),
+       url('http://flaresoftware.com/fonts/lobster/Lobster-Regular.ttf') format('truetype'),
+       url('http://flaresoftware.com/fonts/lobster/Lobster-Regular.woff') format('woff'),
+       url('http://flaresoftware.com/fonts/lobster/Lobster-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
