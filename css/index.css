@@ -1,0 +1,54 @@
+.fadeMeIn {
+  opacity: 0;
+}
+
+
+/* SECTION 1: */
+#section1 {
+  background-image: url(../images/flare-color-dot-bg.png);
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   background-position: center;
+   background-attachment: fixed;
+   margin: 0;
+   padding: 0;
+
+  text-align: center;
+  color: #ffffff;
+  padding-bottom: 350px;
+
+  animation-name: topbarAnimation;
+  animation-duration: 1.75s;
+}
+@keyframes topbarAnimation {
+  from {padding-bottom: 700px;}
+  to {padding-bottom: 350px;}
+}
+#section1 h1 {
+  padding: 120px 20px;
+  text-shadow: 2px 3px 7px #000000;
+}
+
+
+
+/* SECTION 2: */
+#section2 {
+    background-color:none;
+  text-align: center;
+  color: #eeeeee;
+}
+#section2 h1 {
+  padding: 20px;
+}
+
+
+
+
+
+/* For smaller screen sizes */
+@media only screen and (max-width: 768px) {
+
+
+}
