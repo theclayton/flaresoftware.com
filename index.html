@@ -1,35 +1,37 @@
 <!DOCTYPE html>
-<html>
 <head>
-<title>Flare Software LC</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="Description" content="Custom software development ranging from mobile apps to websites." />
 
-<link rel="stylesheet" type="text/css" href="css/styles.css">
-<link rel="stylesheet" type="text/css" href="css/index.css">
+	<title>Flare Software LC</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="Description" content="Custom software development ranging from mobile apps to full stack web development." />
 
-<link rel="apple-touch-icon" sizes="180x180" href="fav/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="fav/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="fav/favicon-16x16.png">
-<link rel="manifest" href="fav/site.webmanifest">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
 
-<!-- This site uses JQuery -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script>
-	   window.jQuery || document.write('<script src="js/jquery/jquery-3.4.1.min.js"><\/script>');
-	</script>
-
+	<link rel="apple-touch-icon" sizes="57x57" href="fav/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="fav/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="fav/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="fav/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="fav/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="fav/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="fav/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="fav/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="fav/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="fav/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="fav/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="fav/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="fav/favicon-16x16.png">
+	<link rel="manifest" href="fav/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="fav/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
 
 	<!-- Recaptcha for the contact form -->
 	<script src='https://www.google.com/recaptcha/api.js'></script>
 
-
 </head>
-<body>
-
-
-
+<body onload="start_app()">
 
 
   <!-- Top Menu Bar -->
@@ -65,13 +67,9 @@
   <!-- End Top Menu Bar -->
 
 
-
-
-
   <!-- Section 1 -->
   	<div id="section1">
-      <h1>Flare Software</h1>
-
+		<img src="images/The-flare-lab.jpg" alt="Flare Software" width="1000" height="700" />
   	</div>
   <!-- End Section 1 -->
 
@@ -82,43 +80,34 @@
   <!-- End Section 1 -->
 
 
+<!-- contactform -->
+  <div id="contactform" class="primary_bg large_top_spacer fade_me_in">
+
+	<h3 class="white_pastel contact_form_title">CONTACT US</h3>
+
+	<div class="contactform">
+		<form action="php/sendmail.php" method="post">
+			<input type="text" class="white_pastel" name="name" id="name" placeholder="YOUR NAME*" required>
+			<input type="text" class="white_pastel" name="phone" id="phone" placeholder="PHONE NUMBER*" required>
+			<input type="text" class="white_pastel" name="email" id="email" placeholder="EMAIL ADDRESS">
+			<input type="text" class="white_pastel" name="street" id="street" placeholder="STREET ADDRESS*" required>
+			<input type="text" class="white_pastel" name="city" id="city" placeholder="CITY*" required>
+			<input type="text" class="white_pastel" name="state" id="state" placeholder="STATE">
+			<br>
+			<textarea name="message" id="message" placeholder="MESSAGE*" required></textarea>
+			<br>
+			<input class="white_pastel" type="submit" name="submit" value="SEND">
+			<span class="g-recaptcha" data-sitekey="6LcagOoUAAAAAIiDPdH-dizMmW1PMo1Cr3rG_ZV0"></span>
+		</form>
+	</div>
+
+</div>
+<!-- End contactform -->
 
 
-
-  <!-- footer -->
-  	<div id="footer">
-
-
-  		<h3>CONTACT US</h3>
-  		<h4>By filling out the following form:</h4>
-
-  		<div class="contactform">
-  					<form action="php/sendmail.php" method="post">
-  				  <input type="text" name="name" id="name" placeholder="Your Name">
-  				  <input type="text" name="phone" id="phone" placeholder="Phone Number">
-  					<br>
-  					<textarea name="message" id="message" placeholder="Message"></textarea>
-  					<br>
-  					<input type="text" name="email" id="email" placeholder="Email">
-  					<input type="submit" name="submit" value="Send">
-            <div class="g-recaptcha" data-sitekey="6LcagOoUAAAAAIiDPdH-dizMmW1PMo1Cr3rG_ZV0"></div>
-  				</form>
-  			</div>
-
-
-  		<div class="copyright"><p>Copyright (c) 2016-2020 Flare Software LC, All Rights Reserved.</p></div>
-
-  	</div>
-  <!-- End footer -->
-
-
-  	<script src="js/homeScript.js"></script>
-
-
-
-  </body>
-  </html>
-
+<div class="copyright">
+	<p>Copyright (c) 2016-2020 Ubiquity Internet LLC, All Rights Reserved.</p>
+</div>
 
 
 </body>

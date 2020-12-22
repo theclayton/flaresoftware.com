@@ -5,37 +5,23 @@
 
 /* SECTION 1: */
 #section1 {
-  background-image: url(../images/flare-color-dot-bg.png);
-   -webkit-background-size: cover;
-   -moz-background-size: cover;
-   -o-background-size: cover;
-   background-size: cover;
-   background-position: center;
-   background-attachment: fixed;
-   margin: 0;
-   padding: 0;
+  margin: 0;
+  padding: 0;
 
   text-align: center;
-  color: #ffffff;
-  padding-bottom: 350px;
+}
 
-  animation-name: topbarAnimation;
-  animation-duration: 1.75s;
-}
-@keyframes topbarAnimation {
-  from {padding-bottom: 700px;}
-  to {padding-bottom: 350px;}
-}
-#section1 h1 {
-  padding: 120px 20px;
-  text-shadow: 2px 3px 7px #000000;
+#section1 img {
+  padding-top: 90px;
+  max-width: 100%;
+  height: auto;
 }
 
 
 
 /* SECTION 2: */
 #section2 {
-    background-color:none;
+  background-color:none;
   text-align: center;
   color: #eeeeee;
 }

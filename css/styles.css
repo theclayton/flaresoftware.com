@@ -1,15 +1,24 @@
-html, body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  max-width: 100%;
-  min-width: 320px;
-  background-color: #111111;
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+    min-width: 320px;
+    background-color: #000000;
 }
+
 * {
-  padding: 0;
-  margin: 0;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
 }
+
+.fade_me_in {
+    opacity: 0;
+}
+
 p {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: lighter;
@@ -41,6 +50,30 @@ h5 {
   font-size: 15pt;
 }
 
+
+.primary {
+  color: #343F44;
+}
+
+.primary_bg {
+  background-color: #343F44;
+}
+
+.white_pastel_bg {
+  background-color: #fffcf8;
+}
+
+.white_pastel {
+  color: #fffcf8;
+}
+
+.orange_pastel_bg {
+  background-color: #ca8443;
+}
+
+.orange_pastel {
+  color: #ca8443;
+}
 
 /* TOPBAR:
 */
@@ -150,166 +183,126 @@ h5 {
 
 
 /* footer */
-#footer {
-    background-color: #111111;
-    height: 7em;
-    padding-bottom: 2em;
-}
-#footer .footericons {
-  float: left;
-  margin-top: 1.25em;
-  padding-left: 15%;
-}
-#footer .footericons img {
-  margin-right: 1em;
-}
-#footer .footericons p {
-  color: #cccccc;
+
+#contactform {
   text-align: center;
-  float: right;
-  margin-top: 0;
-}
-#footer ul {
-    float: right;
-    padding: 0;
-    margin-top: 1.25em;
-    margin-right: 5%;
-    list-style-type: none;
-    overflow: hidden;
-}
-#footer ul li {float: left;
-}
-#footer ul li a {
-    display: inline-block;
-    color: #eeeeee;
-    font-family: Sans-serif;
-    font-weight: lighter;
-    text-align: center;
-    padding-left: 2em;
-    text-decoration: none;
-    transition: 0.3s;
-    font-size: 12pt;
-}
-#footer ul li a:hover {
-  color: #666666;
-  transform: scale(1.1);
-}
-#footer ul li.icon {display: none;
-}
-#footer h3 {
-  padding-top: 2.5em;
-  text-align: center;
-  color: #eeeeee;
-}
-#footer h4 {
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
-  text-align: center;
-  color: #dddddd;
-}
-#footer h5 {
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
-  text-align: center;
-  color: #dddddd;
-}
-#footer .copyright p {
-  color: #cccccc;
-  text-align: center;
-  clear: both;
-  padding-top: 3em;
-  padding-bottom: 2em;
+  padding-bottom: 200px;
 }
 
+.contact_form_title {
+  font-weight: normal;
+  font-size: 28pt;
+  padding: 20px 0px 30px 0px;
+}
 
-
-/* contact form: */
 .contactform {
-  background-color: #111111;
   margin: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  padding: 0;
   width: 100%;
-  padding-top: 1em;
-  height: 17em;
   -webkit-transition: height 0.5s;
   -ms-transform: height 0.5s;
+  transform: height 0.5s;
   transition: height 0.5s;
 }
-.contactform form{
+
+.contactform form {
+  width: 67%;
+  margin: 0 auto;
   display: block;
   text-align: center;
 }
+
 .contactform input {
-    padding: 0.75em;
-    margin: 0.25em;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    font-size: 10pt;
-}
-.contactform input[name=name] {
-    width: 25em;
-}
-.contactform input[name=phone] {
-    width: 15em;
-}
-.contactform textarea {
-  width: 40.75em;
-  height: 5em;
-  padding: 0.75em;
-  margin-top: 0.5em;
-  margin-bottom: 0.25em;
-  resize: none;
+  padding: 0.7em;
+  margin: 0.3em;
   display: inline-block;
-  border: 1px solid #ccc;
+  border: 1px solid #909090;
+  background-color: rgba(255, 255, 255, 0.25);
   border-radius: 4px;
   box-sizing: border-box;
-  font-size: 10pt;
+  width: 100%;
+  font-size: 12pt;
 }
-.contactform input[name=email] {
-    width: 30em;
+
+.contactform textarea {
+  width: 100%;
+  height: 8em;
+  padding: 0.7em;
+  margin: 0.3em;
+  resize: none;
+  display: inline-block;
+  border: 1px solid #909090;
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 12pt;
 }
+
+input:focus,
+textarea:focus {
+  background-color: rgba(255, 255, 255, 0.15);
+  border: 2px solid #ca8443;
+  outline: none;
+}
+
+::placeholder {
+  color: #d2d2d2;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: #eeeeee;
+}
+
+::-ms-input-placeholder {
+  color: #eeeeee;
+}
+
 .contactform input[type=submit] {
-    width: 10em;
-    background-color: #6a6a6a;
-    color: white;
-    border: 1px solid #222222;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: all .2s ease-in-out;
-    font-size: 10pt;
+  display: block;
+  float: right;
+  box-shadow: inset 0px 1px 0px 0px #ca925d;
+  background-color: #ca8443;
+  border-radius: 6px;
+  border: 1px solid #af723a;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: normal;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #ffee66;
+  transition: 0.3s;
+  color: #eeeeee;
+  width: 8em;
+  height: 3em;
 }
+
 .contactform input[type=submit]:hover {
-  background-color: #444444;
+  background-color: #a6672f;
+  color: #bbbbbb;
 }
+
 .g-recaptcha {
-   padding: 1em;
-   margin: 0 auto;
-   width: 304px;
+  display: block;
+  float: right;
+  padding: 6px;
+  width: 304px;
 }
 
+.copyright {
+  text-align: center;
+  padding-bottom: 50px;
+  background-color: #2e373d;
+  color: #cccccc;
+  width: 100%;
+}
 
-
+.copyright p {
+  padding-top: 50px;
+  border-top: 1px dashed #eeeeee;
+}
 
 
 @media only screen and (max-width: 768px) {
-
-  h1 {
-    font-family: Sans-serif;
-    font-size: 32pt;
-  }
-  h2 {
-    font-family: Sans-serif;
-    font-size: 27pt;
-  }
-  h3 {
-    font-family: Sans-serif;
-    font-size: 22pt;
-  }
-
 
   #menuiconpic {
     display: inline-block;
@@ -342,58 +335,8 @@ h5 {
     width: 100%;
   }
 
-
-
-
-  #footer {
-    height: inherit;
-    padding-bottom: 1em;
-  }
-  #footer .footericons {
-    padding-top: 1em;
-    padding-left: 40%;
-  }
-  #footer ul {
-    float: none;
-    position: absolute;
-    min-width: 355px;
-    padding-top: 4em;
-    left: 40%;
-    transform: translate(-40%, 0%);
-  }
-  #footer h3 {
-    padding-top: 6em;
-  }
-
-
-.contactform {
-  padding-top: 1em;
-  position: inherit;
-  height: 21em;
+  .contactform form {
+    width: 92%;
 }
-.contactform input[name=name] {
-    width: 90%;
-    margin-bottom: 0.5em;
-}
-.contactform input[name=phone] {
-    width: 90%;
-}
-.contactform textarea {
-  width: 90%;
-}
-.contactform input[name=email] {
-    width: 90%;
-}
-.contactform input[type=submit] {
-  margin-top: 1em;
-  padding: 1.25em 1em 1.25em 1em;
-  border-radius: 0.75em;
-}
-
-
-#footer .copyright p {
-  padding: 4em 0.5em 1em 0.5em;
-}
-
 
 } /* end of responsive modifications */
