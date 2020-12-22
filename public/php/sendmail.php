@@ -55,7 +55,7 @@ $response=file_get_contents("https://www.google.com/recaptcha/api/siteverify?sec
           echo '<h2>You are spammer! Get the @$%K out mofo, before I bust a cap!</h2>';
         } else {
             mail($to, $subject, $body, $headers);
-            header('Location: http://flaresoftware.com/submitted-form.html');
+            header('Location: http://flaresoftware.com/public/submitted-form.html');
         }
 
 
