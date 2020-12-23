@@ -30,6 +30,8 @@
 	<!-- Recaptcha for the contact form -->
 	<script src='https://www.google.com/recaptcha/api.js'></script>
 
+	<script src='public/js/animations.js'></script>
+
 </head>
 <body onload="start_app()">
 
@@ -45,10 +47,10 @@
   			<a id="menuiconpic" onclick="navswitch()"></a>
 
   		<ul id="menuiconul">
-        <li><a class="menuItem2" href="#"><p>mobile apps</p></a></li>
-        <li><a class="menuItem2" href="#"><p>websites</p></a></li>
-  			<li><a class="menuItem3" href="#footer"><p>contact</p></a></li>
-  			<li><a class="menuItem4" href="#"><p>about</p></a></li>
+			<li><a class="menuItem1" href="#"><p>mobile apps</p></a></li>
+			<li><a class="menuItem2" href="#section2"><p>welcome</p></a></li>
+			<li><a class="menuItem3" href="#section3"><p>projects</p></a></li>
+  			<li><a class="menuItem4" href="#contactform"><p>contact</p></a></li>
   		</ul>
 
   		</div>
@@ -69,30 +71,63 @@
 
   <!-- Section 1 -->
   	<div id="section1">
-		<img src="public/images/The-flare-lab.jpg" alt="Flare Software" width="1000" height="700" />
+		<img class="height-auto" src="public/images/The-flare-lab.jpg" alt="Flare Software" width="1000" height="700" />
   	</div>
   <!-- End Section 1 -->
 
 
-  <!-- Section 1 -->
-  	<div id="section2">
-  	</div>
-  <!-- End Section 1 -->
+  <!-- Section 2 -->
+  	<div id="section2" class="flex">
+		<div class="left-card two-thirds-flex padded-20">
+
+<pre class="terminal-light-green padding-left-20p">
+Connected to 107.180.55.0
+ __    __     _
+/ / /\ \ \___| | ___ ___  _ __ ___   ___
+\ \/  \/ / _ \ |/ __/ _ \| '_ ` _ \ / _ \
+ \  /\  /  __/ | (_| (_) | | | | | |  __/
+  \/  \/ \___|_|\___\___/|_| |_| |_|\___|
+
+copyright (c) 2016-2020 Flare Software LC
+1337           https://flaresoftware.com/
+[?] <a href="#contactform" class="terminal-light-green">contact us</a>
+
+you@flaresoftware: ~$ cat README.md
+
+.........................................................................
+Hello.
+
+This is Clayton Ward. The developer of this site. I built it with
+plain old HTML, CSS, and JavaScript. I drew all the images from scratch
+using Gimp. Feel free to browse this page and its' links, let me know 
+what you think!
+
+you@flaresoftware: ~$
+</pre>
+
+	</div>
+		<!-- <img class="one-third-flex height-auto" src="public/images/computer.jpg" alt="Flare Software" width="1050" height="735" /> -->
+	</div>
+	<!-- End Section 2 -->
+
+
+	<!-- Section 3 -->
+	<div id="section3" class="flex">
+
+	</div>
+	<!-- End Section 3 -->
+
 
 
 <!-- contactform -->
-  <div id="contactform" class="primary_bg large_top_spacer fade_me_in">
+  <!-- <div id="contactform" class="primary_bg large_top_spacer fade_me_in">
 
-	<h3 class="white_pastel contact_form_title">CONTACT US</h3>
+	<h3 class="white-pastel">CONTACT US</h3>
 
 	<div class="contactform">
 		<form action="public/php/sendmail.php" method="post">
 			<input type="text" class="white_pastel" name="name" id="name" placeholder="YOUR NAME*" required>
-			<input type="text" class="white_pastel" name="phone" id="phone" placeholder="PHONE NUMBER*" required>
-			<input type="text" class="white_pastel" name="email" id="email" placeholder="EMAIL ADDRESS">
-			<input type="text" class="white_pastel" name="street" id="street" placeholder="STREET ADDRESS*" required>
-			<input type="text" class="white_pastel" name="city" id="city" placeholder="CITY*" required>
-			<input type="text" class="white_pastel" name="state" id="state" placeholder="STATE">
+			<input type="text" class="white_pastel" name="email" id="email" placeholder="EMAIL ADDRESS" required>
 			<br>
 			<textarea name="message" id="message" placeholder="MESSAGE*" required></textarea>
 			<br>
@@ -101,7 +136,7 @@
 		</form>
 	</div>
 
-</div>
+</div> -->
 <!-- End contactform -->
 
 

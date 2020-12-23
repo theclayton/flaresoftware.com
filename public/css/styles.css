@@ -11,68 +11,52 @@ body {
 * {
     padding: 0;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: lighter;
+}
+
+pre {
+  white-space: pre-wrap;       /* Since CSS 2.1 */
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
 
 .fade_me_in {
     opacity: 0;
 }
 
-p {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: lighter;
-  font-size: 13pt;
-}
-h1 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: lighter;
-  font-size: 60pt;
-}
-h2 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: lighter;
-  font-size: 45pt;
-}
-h3 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: lighter;
-  font-size: 32pt;
-}
-h4 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: lighter;
-  font-size: 20pt;
-}
-h5 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: lighter;
-  font-size: 15pt;
+
+.flex {
+  display: flex;
+  align-items: top;
 }
 
-
-.primary {
-  color: #343F44;
+.one-third-flex {
+  flex: 1 1 auto;
+  max-width: 37%;
 }
 
-.primary_bg {
-  background-color: #343F44;
+.two-thirds-flex {
+  flex: 2 1 auto;
+  max-width: 63%;
 }
 
-.white_pastel_bg {
-  background-color: #fffcf8;
+.height-auto {
+  height: auto;
 }
 
-.white_pastel {
-  color: #fffcf8;
+.terminal-light-green {
+  color: #33ff33;
+  font-family: 'Courier New', monospace;
+  text-shadow: 0 0 5px #C8C8C8;
 }
 
-.orange_pastel_bg {
-  background-color: #ca8443;
+.padded-20 {
+  padding: 20px;
 }
 
-.orange_pastel {
-  color: #ca8443;
+.padding-left-20p {
+  padding-left: 15%;
 }
 
 /* TOPBAR:
@@ -89,6 +73,7 @@ h5 {
   -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.65);
   -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.65);
   box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.65);
+  font-family: Arial, Helvetica, sans-serif;
 }
 #topbar .topbarlogo {
   float: left;
@@ -304,39 +289,47 @@ textarea:focus {
 
 @media only screen and (max-width: 768px) {
 
-  #menuiconpic {
-    display: inline-block;
-    background-image: url(http://flaresoftware.com/images/menu-icon.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 80px;
-    height: 40px;
-    padding: 0.5em;
-    float: right;
-    cursor: pointer;
-  }
-  .menuicon ul, .menu-icon:active ul {
-    display: none;
-    padding: 0px;
-    background: rgba(0, 0, 0, 0.80);
-    border: 1px solid #444444;
-    width: 100%;
-  }
-  .menuicon li {
-    padding-left: 0.5em;
-    width: 100%;
-    text-align: center;
-    border-bottom: 1px solid #555555;
-  }
-  .menuicon li a, .menuicon li form {
-    text-align: center;
-    padding: 0.5em;
-    height: 100%;
-    width: 100%;
-  }
+#menuiconpic {
+  display: inline-block;
+  background-image: url(http://flaresoftware.com/images/menu-icon.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 80px;
+  height: 40px;
+  padding: 0.5em;
+  float: right;
+  cursor: pointer;
+}
+.menuicon ul, .menu-icon:active ul {
+  display: none;
+  padding: 0px;
+  background: rgba(0, 0, 0, 0.80);
+  border: 1px solid #444444;
+  width: 100%;
+}
+.menuicon li {
+  padding-left: 0.5em;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #555555;
+}
+.menuicon li a, .menuicon li form {
+  text-align: center;
+  padding: 0.5em;
+  height: 100%;
+  width: 100%;
+}
 
-  .contactform form {
-    width: 92%;
+.contactform form {
+  width: 92%;
+}
+
+.flex {
+  display: inline-block;
+}
+
+.padding-left-20p {
+  padding-left: 0;
 }
 
 } /* end of responsive modifications */

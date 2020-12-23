@@ -3,38 +3,39 @@
 }
 
 
+
 /* SECTION 1: */
 #section1 {
   margin: 0;
   padding: 0;
-
+  width: 100%;
   text-align: center;
 }
 
 #section1 img {
-  padding-top: 90px;
+  padding-top: 100px;
   max-width: 100%;
-  height: auto;
 }
 
 
 
 /* SECTION 2: */
 #section2 {
-  background-color:none;
-  text-align: center;
-  color: #eeeeee;
+  margin-top: -150px;
 }
+
+
 #section2 h1 {
-  padding: 20px;
+  padding: 20px 0px;
+  font-size: 30pt;
+  font-weight: lighter;
 }
-
-
 
 
 
 /* For smaller screen sizes */
 @media only screen and (max-width: 768px) {
-
-
+  #section2 {
+    margin-top: -50px;
+  }
 }
