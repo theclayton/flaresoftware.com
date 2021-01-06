@@ -21,7 +21,7 @@
 
 /* SECTION 2: */
 #section2 {
-  margin-top: -150px;
+  margin-top: -220px;
 }
 
 
@@ -34,8 +34,8 @@
 
 
 /* For smaller screen sizes */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 868px) {
   #section2 {
-    margin-top: -50px;
+    margin-top: -75px;
   }
 }
