@@ -247,7 +247,7 @@ textarea:focus {
 #contactform input[type=submit] {
   display: block;
   float: right;
-  background-color: #222222;
+  background-color: #000000;
   border-radius: 6px;
   border: 1px solid #33ff33;
   cursor: pointer;
@@ -257,6 +257,7 @@ textarea:focus {
   transition: 0.3s;
   width: 8em;
   height: 3em;
+  -webkit-appearance: none;
 }
 
 #contactform input[type=submit]:hover {
