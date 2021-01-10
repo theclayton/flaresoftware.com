@@ -47,10 +47,9 @@
   			<a id="menuiconpic" onclick="navswitch()"></a>
 
   		<ul id="menuiconul">
-			<li><a class="menuItem1" href="#"><p>mobile apps</p></a></li>
-			<li><a class="menuItem2" href="#section2"><p>welcome</p></a></li>
-			<li><a class="menuItem3" href="#section3"><p>projects</p></a></li>
-  			<li><a class="menuItem4" href="#contactform"><p>contact</p></a></li>
+			<li><a class="menuItem1" href="#section2"><p>welcome</p></a></li>
+			<li><a class="menuItem2" href="#section3"><p>my work</p></a></li>
+  			<li><a class="menuItem3" href="#contactform"><p>contact</p></a></li>
   		</ul>
 
   		</div>
@@ -66,21 +65,22 @@
   					}
   			}
   	</script>
-  <!-- End Top Menu Bar -->
+  	<!-- End Top Menu Bar -->
 
 
-  <!-- Section 1 -->
-  	<div id="section1">
-		<img class="height-auto" src="public/images/The-flare-lab.jpg" alt="Flare Software" width="1250" height="875" />
-  	</div>
-  <!-- End Section 1 -->
+
+	<div id="section1">
+		<img class="full-width-img height-auto" src="public/images/The-flare-lab.jpg" alt="Flare Software" width="1250" height="875" />
+	</div>
+	<!-- End Section 1 -->
 
 
-  <!-- Section 2 -->
-  	<div id="section2" class="flex">
-		<div class="left-card two-thirds-flex padded-20">
 
-<pre class="terminal-text terminal-light-green padding-left-20p">
+<div id="welcomeSection" class="flex">
+	<div class="left-card two-thirds-flex padded-20">
+
+
+<pre class="terminal-text terminal-light-green padding-left-15p">
 Connected to 107.180.55.0
  __    __     _
 / / /\ \ \___| | ___ ___  _ __ ___   ___
@@ -89,56 +89,134 @@ Connected to 107.180.55.0
   \/  \/ \___|_|\___\___/|_| |_| |_|\___|
 
 copyright (c) 2016-2020 Flare Software LC
-1337           https://flaresoftware.com/
+13373          https://flaresoftware.com/
 [?] <a href="#contactform" class="terminal-light-green">contact us</a>
 
+<hr class="terminal-light-green-hr">
 you@flaresoftware: ~$ cat README.md
 
-<hr class="terminal-light-green-hr">
 Hello.
 
 This is Clayton Ward. The developer of this site. I built it with plain old HTML, CSS, and JavaScript. I drew all the images from scratch using Gimp. Feel free to browse this page and its' links, let me know what you think!
 
-you@flaresoftware: ~$
+you@flaresoftware: ~$ cd just_a_few_projects
 </pre>
 
-	</div>
-		<!-- <img class="one-third-flex height-auto" src="public/images/computer.jpg" alt="Flare Software" width="1050" height="735" /> -->
-	</div>
-	<!-- End Section 2 -->
 
-
-	<!-- Section 3 -->
-	<div id="section3" class="flex">
-
-	</div>
-	<!-- End Section 3 -->
+</div>
+	<img class="computer-thing" src="public/images/computer-thing.jpg" alt="Flare Software Computer Thing" width="325" height="325" />
+</div>
+<!-- End Welcome Section -->
 
 
 
-<!-- contactform -->
-  <!-- <div id="contactform" class="primary_bg large_top_spacer fade_me_in">
-
-	<h3 class="white-pastel">CONTACT US</h3>
-
-	<div class="contactform">
-		<form action="public/php/sendmail.php" method="post">
-			<input type="text" class="white_pastel" name="name" id="name" placeholder="YOUR NAME*" required>
-			<input type="text" class="white_pastel" name="email" id="email" placeholder="EMAIL ADDRESS" required>
-			<br>
-			<textarea name="message" id="message" placeholder="MESSAGE*" required></textarea>
-			<br>
-			<input class="white_pastel" type="submit" name="submit" value="SEND">
-			<span class="g-recaptcha" data-sitekey="6LcagOoUAAAAAIiDPdH-dizMmW1PMo1Cr3rG_ZV0"></span>
-		</form>
+	<div id="projectsImageSection">
+		<img class="full-width-img height-auto" src="public/images/servers-and-stuff.jpg" alt="Flare Software servers and stuff" width="1100" height="365" />
 	</div>
 
-</div> -->
-<!-- End contactform -->
+
+<div id="projectsSection">
+
+<pre class="terminal-text terminal-light-green">
+you@flaresoftware: ~$ cat README.md
+
+<span class="my-work-text">
+88b           d88  8b        d8     I8,        8        ,8I   ,ad8888ba,    88888888ba   88      a8P
+888b         d888   Y8,    ,8P      `8b       d8b       d8'  d8"'    `"8b   88      "8b  88    ,88'
+88`8b       d8'88    Y8,  ,8P        "8,     ,8"8,     ,8"  d8'        `8b  88      ,8P  88  ,88"
+88 `8b     d8' 88     "8aa8"          Y8     8P Y8     8P   88          88  88aaaaaa8P'  88,d88'
+88  `8b   d8'  88      `88'           `8b   d8' `8b   d8'   88          88  88""""88'    8888"88,
+88   `8b d8'   88       88             `8a a8'   `8a a8'    Y8,        ,8P  88    `8b    88P   Y8b
+88    `888'    88       88              `8a8'     `8a8'      Y8a.    .a8P   88     `8b   88     "88,
+88     `8'     88       88               `8'       `8'        `"Y8888Y"'    88      `8b  88       Y8b
+</span>
+
+
+<hr class="terminal-light-green-hr">
+
+The following are links to view my projects, sorted by category. You will be redirected to the Archive, a web app I build to display all my projects. You can read about how I developed each project. Feel free to take a look around.
+
+
+### CLICK ONE OF THE FOLLOWING TO VIEW PROJECTS:
+
+<a class="terminal-light-green no-decoration" href="https://archive.flaresoftware.com/search?terms=HTML" target="_blank">
+ __    __     _         _ _
+/ / /\ \ \___| |__  ___(_) |_ ___  ___
+\ \/  \/ / _ \ '_ \/ __| | __/ _ \/ __|
+ \  /\  /  __/ |_) \__ \ | ||  __/\__ \
+  \/  \/ \___|_.__/|___/_|\__\___||___/
+</a>
+<a class="terminal-light-green no-decoration" href="https://archive.flaresoftware.com/search?terms=angular%20react%20vue" target="_blank">
+ __    __     _         _
+/ / /\ \ \___| |__     /_\  _ __  _ __  ___
+\ \/  \/ / _ \ '_ \   //_\\| '_ \| '_ \/ __|
+ \  /\  /  __/ |_) | /  _  \ |_) | |_) \__ \
+  \/  \/ \___|_.__/  \_/ \_/ .__/| .__/|___/
+                           |_|   |_|
+</a>
+<a class="terminal-light-green no-decoration" href="https://archive.flaresoftware.com/search?terms=xcode" target="_blank">
+ _
+(_) ___  ___
+| |/ _ \/ __|
+| | (_) \__ \
+|_|\___/|___/
+</a>
+<a class="terminal-light-green no-decoration" href="https://archive.flaresoftware.com/search?terms=xamarin%20kotlin" target="_blank">
+   _             _           _     _
+  /_\  _ __   __| |_ __ ___ (_) __| |
+ //_\\| '_ \ / _` | '__/ _ \| |/ _` |
+/  _  \ | | | (_| | | | (_) | | (_| |
+\_/ \_/_| |_|\__,_|_|  \___/|_|\__,_|
+</a>
+<a class="terminal-light-green no-decoration" href="https://archive.flaresoftware.com/search?terms=Atmel%20Studio" target="_blank">
+                _              _     _          _
+  ___ _ __ ___ | |__   ___  __| | __| | ___  __| |
+ / _ \ '_ ` _ \| '_ \ / _ \/ _` |/ _` |/ _ \/ _` |
+|  __/ | | | | | |_) |  __/ (_| | (_| |  __/ (_| |
+ \___|_| |_| |_|_.__/ \___|\__,_|\__,_|\___|\__,_|
+</a>
+
+
+you@flaresoftware: ~$ cd contact_form
+
+
+<hr class="terminal-light-green-hr">
+
+
+
+
+
+
+
+  ___  _____  _  _  ____   __    ___  ____
+ / __)(  _  )( \( )(_  _) /__\  / __)(_  _)
+( (__  )(_)(  )  (   )(  /(__)\( (__   )(
+ \___)(_____)(_)\_) (__)(__)(__)\___) (__)
+</pre>
+</div><!-- End Projects Section -->
+
+
+
+<div id="contactform" class="fade_me_in">
+	<form action="public/php/sendmail.php" method="post">
+		<input type="text" class="terminal-light-green" name="name" id="name" placeholder="YOUR NAME*" required>
+		<input type="text" class="terminal-light-green" name="email" id="email" placeholder="EMAIL ADDRESS*" required>
+		<br>
+		<textarea name="message" class="terminal-light-green" id="message" placeholder="MESSAGE*" required></textarea>
+		<br>
+		<input class="terminal-light-green" type="submit" name="submit" value="SEND">
+		<span class="g-recaptcha" data-sitekey="6LcagOoUAAAAAIiDPdH-dizMmW1PMo1Cr3rG_ZV0"></span>
+	</form>
+</div>
+
+
+<div id="footerImageSection">
+	<img class="full-width-img height-auto" src="public/images/satellite-computer.jpg" alt="Flare Software satellite computer" width="300" height="319" />
+</div>
 
 
 <div class="copyright">
-	<p class="terminal-text terminal-light-green">Copyright (c) 2016-2020 Flare Software LC, All Rights Reserved.</p>
+	<p class="terminal-text terminal-light-green">Copyright (c) 2016-2021 Flare Software LC, All Rights Reserved.</p>
 </div>
 
 
