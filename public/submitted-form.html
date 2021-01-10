@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<head>
+
+	<title>Flare Software LC</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="Description" content="Custom software development ranging from mobile apps to full stack web development." />
+
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+
+</head>
+<body>
+
+
+  <!-- Top Menu Bar -->
+  	<div id="topbar">
+        <a href="index.html">
+          <img class="topbarlogo" src="images/flaresoftware-logo.png" alt="Flare Software Logo" height="35">
+          <p class="topbartitle">flaresoftware</p>
+        </a>
+
+  		<div class="menuicon">
+  			<a id="menuiconpic" onclick="navswitch()"></a>
+
+  		<ul id="menuiconul">
+			<li><a class="menuItem1" href="https://flaresoftware.com/index.html#welcomeSection"><p>welcome</p></a></li>
+			<li><a class="menuItem2" href="https://flaresoftware.com/index.html#projectsSection"><p>my work</p></a></li>
+  			<li><a class="menuItem3" href="https://flaresoftware.com/index.html#contact"><p>contact</p></a></li>
+  		</ul>
+
+  		</div>
+
+  	</div>
+  	<script>
+  			function navswitch() {
+  					var x = document.getElementById('menuiconul');
+  					if (x.style.display === 'block') {
+  							x.style.display = 'none';
+  					} else {
+  							x.style.display = 'block';
+  					}
+  			}
+  	</script>
+  	<!-- End Top Menu Bar -->
+
+
+<div id="footerImageSection" style="padding-top: 100px;">
+	<img class="full-width-img height-auto" src="images/computer-thing.jpg" alt="Flare Software satellite computer" width="300" height="319" />
+</div>
+
+
+<div class="copyright">
+    <p class="terminal-text terminal-light-green">Message Sent.</p>
+    <br>
+    <a class="terminal-text terminal-light-green" href="https://flaresoftware.com/">< Go back</a>
+</div>
+
+
+</body>
+</html>
