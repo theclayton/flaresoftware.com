@@ -1,0 +1,124 @@
+.fadeMeIn {
+  opacity: 0;
+}
+
+
+/* SECTION 1: */
+#section1 {
+  background-color: #eeeeee;
+  margin: 0;
+  padding: 9em 0em 0em 0em;
+  text-align: center;
+  color: #111111;
+}
+#section1 h1 {
+  font-weight: bold;
+  padding-left: 5%;
+  max-width: 90%;
+  transition: 0.3s;
+  animation-name: section1Pop;
+  animation-duration: 1s;
+}
+#section1 h3 {
+  padding-top: 0.25em;
+  padding-bottom: 1.5em;
+  font-weight: normal;
+}
+#section1 h1:hover {
+  transform: scale(1.025);
+}
+#section1 p {
+  padding: 1em;
+}
+
+
+@keyframes section1Pop {
+  0% {transform: scale(1.0);}
+  50% {transform: scale(1.05);}
+  10% {transform: scale(1.0);}
+}
+
+
+
+#video{
+  padding-top: 1em;
+  text-align: center;
+  width: 90%;
+}
+
+
+
+#instructions {
+  background-color: #eeeeee;
+  color: #111111;
+  padding: 2em 0em;
+  text-align: center;
+}
+#instructions h3 {
+  text-align: center;
+  padding: 1em;
+}
+#instructions p {
+  text-align: left;
+  padding: 0.25em 5em;
+}
+#instructions li p {
+  text-align: left;
+  padding: 1em 0em;
+}
+#instructions ul {
+  padding: 1em 7em;
+}
+
+
+
+
+#privacy {
+  background-color: #eeeeee;
+  text-align: center;
+  color: #222222;
+}
+#privacy h1 {
+  padding-top: 2em;
+}
+#privacy h3 {
+  padding: 0.5em;
+}
+#privacy h5 {
+  padding: 3em 0.25em 5em 0.25em;
+}
+
+
+
+/* For smaller screen sizes */
+@media only screen and (max-width: 768px) {
+  #section1 {
+    background-attachment: scroll;
+    padding-bottom: 2em;
+  }
+  #section1 h1 {
+    text-align: center;
+    padding-left: 2%;
+    padding-right: 2%;
+    width: 93%;
+  }
+  #section1 h3 {
+    text-align: center;
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+    line-height: 150%;
+  }
+
+
+
+  #instructions h3 {
+    padding: 1em;
+  }
+  #instructions p {
+    padding: 0.25em 2em;
+  }
+  #instructions ul {
+    padding: 1em 4em;
+  }
+
+}

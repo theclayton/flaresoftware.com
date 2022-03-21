@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Keep & Find Email Instructions</title>
+
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<link rel="stylesheet" type="text/css" href="css/index.css">
+
+<meta name = "viewport" content = "user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width" />
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+
+</head>
+<body>
+
+
+
+	<!-- Top Menu Bar -->
+		<div id="topbar">
+			<div class="topbartitle"><a href="index.html"><h5>Keep & Find</h5></a></div>
+
+			<div class="menuicon">
+				<a id="menuiconpic" onclick="navswitch()"></a>
+
+			<ul id="menuiconul">
+				<li><a class="menuItem1" href="index.html"><p>How To</p></a></li>
+				<li><a class="menuItem1" href="email-instructions.html"><p>Email</p></a></li>
+				<li><a class="menuItem2" href="instructional-video.html"><p>Video</p></a></li>
+				<li><a class="menuItem3" href="privacy.html"><p>Privacy</p></a></li>
+				<li><a class="menuItem3" href="privacy.html"><p>Contact</p></a></li>
+			</ul>
+
+			</div>
+
+		</div>
+
+		<script>
+				function navswitch() {
+						var x = document.getElementById('menuiconul');
+						if (x.style.display === 'block') {
+								x.style.display = 'none';
+						} else {
+								x.style.display = 'block';
+						}
+				}
+		</script>
+	<!-- End Top Menu Bar -->
+
+
+
+
+<!-- footer -->
+	<div id="footer">
+
+		<h3>Send Instructions via Email</h3>
+		<h5>Please enter the email address you would like to send the instructions to.</h5>
+
+		<div class="contactform">
+					<form action="php/sendinstructions.php" method="post">
+					<input type="text" name="email" id="email" placeholder="Email">
+          <input type="submit" name="submit" value="Send">
+				</form>
+			</div>
+
+
+		<div class="copyright"><p>Copyright (c) 2020 Lyman Metcalf. All Rights Reserved.</p></div>
+
+	</div>
+<!-- End footer -->
+
+
+
+</body>
+</html>
