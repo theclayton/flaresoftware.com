@@ -4,8 +4,7 @@
 	<title>Flare Software LC</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="Description"
-		content="Custom software development ranging from mobile apps to full stack web development." />
+	<meta name="Description" content="Official site for Flare Software LC - mobile apps, web development, and more." />
 
 	<link rel="stylesheet" type="text/css" href="public/css/styles.css">
 	<link rel="stylesheet" type="text/css" href="public/css/index.css">
@@ -27,14 +26,9 @@
 	<meta name="msapplication-TileColor" content="#ffffff">
 	<meta name="msapplication-TileImage" content="public/fav/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
-
-	<!-- Recaptcha for the contact form -->
-	<script src='https://www.google.com/recaptcha/api.js'></script>
-
 </head>
 
 <body>
-
 
 	<!-- Top Menu Bar -->
 	<div id="topbar">
@@ -47,30 +41,20 @@
 			<a id="menuiconpic" onclick="navswitch()"></a>
 
 			<ul id="menuiconul">
-				<li><a class="menuItem1" href="#welcomeSection">
+				<li>
+					<a class="menuItem1" href="#welcomeSection">
 						<p>welcome</p>
-					</a></li>
-				<li><a class="menuItem2" href="#projectsSection">
+					</a>
+				</li>
+				<li>
+					<a class="menuItem2" href="#my-work">
 						<p>my work</p>
-					</a></li>
-				<li><a class="menuItem3" href="#contact">
-						<p>contact</p>
-					</a></li>
+					</a>
+				</li>
 			</ul>
-
 		</div>
 
 	</div>
-	<script>
-		function navswitch() {
-			var x = document.getElementById('menuiconul');
-			if (x.style.display === 'block') {
-				x.style.display = 'none';
-			} else {
-				x.style.display = 'block';
-			}
-		}
-	</script>
 	<!-- End Top Menu Bar -->
 
 
@@ -88,7 +72,7 @@
 
 
 			<pre class="terminal-text terminal-light-green padding-left-15p">
-Connected to 104.21.82.61
+Connected to <span id="ipinfo">Calculating...</span>
  __    __     _
 / / /\ \ \___| | ___ ___  _ __ ___   ___
 \ \/  \/ / _ \ |/ __/ _ \| '_ ` _ \ / _ \
@@ -97,50 +81,103 @@ Connected to 104.21.82.61
 
 copyright (c) Flare Software LC
 1337          https://flaresoftware.com/
-[?] <a href="#contactform" class="terminal-light-green">contact us</a>
+[?] <a href="mailto:clayton@flaresoftware.com" class="terminal-light-green">contact me</a>
 
-<hr class="terminal-light-green-hr">
+<hr id="my-work" class="terminal-light-green-hr">
 you@flaresoftware: ~$ cat README.dank
 
-Hello.
+Hello,
 
-This is Clayton Ward. The developer of this site. I built it with plain old HTML, CSS, and JavaScript. I drew all the images from scratch using Gimp. Feel free to browse this page and its' links, let me know what you think!
+This is Clayton Ward, the developer of this site and the "boss man" at Flare Software LC.
 
-you@flaresoftware: ~$ cd just_a_few_projects
+I build random stuff — from mobile apps, websites, and web apps to backend APIs and embedded systems... basically, whatever I decide to binge on any given day.
 
-<a href="https://bibleonhand.com/" class="terminal-light-green">Bible on Hand</a>
-"The heart of the discerning acquires knowledge, and the ear of the wise seeks it out."
-<a href="https://bibleonhand.com/bsb/proverbs/18-15.html" class="terminal-light-green">Proverbs 18:15</a>
+The graphics on this page are my attempt at creating "hacker art". Please enjoy them thoroughly. Also, for your viewing pleasure, some of my projects are listed below.
+
+<hr class="terminal-light-green-hr">
+
+you@flaresoftware: ~$ flaresoftware --show just_a_few_projects
 <br>
-<a href="https://www.npmjs.com/package/nuke-it" class="terminal-light-green">nuke-it</a>
-The tool that completely obliterates your node modules and package-lock file, then reinstalls them automatically. All this with just one simple command.
+<a href="https://nativeflutetabs.com/" class="terminal-light-green" target="_blank">Native Flute Tabs</a>
+A mobile app for Native American flute players. Play and listen to songs with automatically scrolling tabs. The largest collection of Native flute tabs.
+<a href="https://nativeflutetabs.com/" class="terminal-light-green no-text-decoration" target="_blank">
+      %%%%%%%%%%%%%%%%  
+    %%%%%%%%%%##+*#%%%%%
+    %%%%%%%%%%#++#%%%%%%
+    %%%%%%%%**##+**%%%%%
+    %%%%%*+***+++++%%%%%
+    %%%%#%%###*+++*%%%%%
+    %%%%%%%%%%#+++#%%%%%
+    %%%%%%%%%%%*+#%%%%%%
+    %%%%%%%%%*%*%%%%%%%%
+    %%%%%%%%%*%*#%%%%%%%
+      %%%%%%%%%%%%%%%%  
+</a>
+<br>
+<a href="https://bibleonhand.com/" class="terminal-light-green" target="_blank">Bible on Hand</a>
+A static website with no ads for reading the Bible in several translations. Simple design, and it includes dark mode.
+"The heart of the discerning acquires knowledge, and the ear of the wise seeks it out." — <a href="https://bibleonhand.com/bsb/proverbs/18-15.html" class="terminal-light-green" target="_blank">Proverbs 18:15</a>
+<a href="https://bibleonhand.com/" class="terminal-light-green no-text-decoration" target="_blank">
+       .-.
+     __| |__
+    [__   __]
+       | |
+       | |
+       | |
+       '-'
+</a><br>
+<a href="https://www.npmjs.com/package/nuke-it" class="terminal-light-green" target="_blank">nuke-it</a>
+A tool that completely obliterates your node_modules folder and package-lock file, then reinstalls them automatically. All this with just one simple command. Featuring incredible ASCII art animations.
+<a href="https://www.npmjs.com/package/nuke-it" class="terminal-light-green no-text-decoration" target="_blank">
 
-<a href="https://github.com/theclayton/the-archive-backend" class="terminal-light-green">The Archive (NodeJS backend)</a>
-ExpressJS backend API for an Angular frontend. A resource for viewing projects.
-
+        _ ._  _ , _ ._
+      (_ ' ( `  )_  .__)
+    ( (  (    )   `)  ) _)
+   (__ (_   (_ . _) _) ,__)
+       `~~`\ ' . /`~~`
+            ;   ;
+            /   \
+  _________/_ __ \__________
+</a><br>
+<a href="https://theclayton.github.io/2012-flaresoftware/" class="terminal-light-green" target="_blank">The Original Flare Software Website</a>
+Step into a time machine and see what this site used to look like back in 2012. Bask in wonder and awe.
+<a href="https://theclayton.github.io/2012-flaresoftware/" class="terminal-light-green no-text-decoration" target="_blank">
+	 
+        _________
+      / ======== \
+     / __________ \
+    |  __________  |
+    | |2012      | |
+    | |          | |
+    | |__________| |
+    \=____________/ 
+    / """"""""""" \                       
+   / ::::::::::::: \                  
+  (_________________)
+</a><br>
+<hr class="terminal-light-green-hr">
+<br>
+Thanks for visiting!
 </pre>
 
-
 		</div>
+
 		<img class="computer-thing" src="public/images/computer-thing.jpg" alt="Flare Software Computer Thing"
 			width="325" height="325" />
 	</div>
 	<!-- End Welcome Section -->
-
-
 
 	<div id="projectsImageSection">
 		<img class="full-width-img height-auto" src="public/images/servers-and-stuff.jpg"
 			alt="Flare Software servers and stuff" width="1100" height="365" />
 	</div>
 
-
-	<div id="projectsSection">
+	<!--<div id="projectsSection">
 
 		<pre class="terminal-text terminal-light-green">
 
-	
-you@flaresoftware: ~$ show contact_form
+
+you@flaresoftware: ~$ flaresoftware contact
 
 
 <hr id="contact" class="terminal-light-green-hr">
@@ -156,11 +193,11 @@ you@flaresoftware: ~$ show contact_form
 ( (__  )(_)(  )  (   )(  /(__)\( (__   )(
  \___)(_____)(_)\_) (__)(__)(__)\___) (__)
 </pre>
-	</div><!-- End Projects Section -->
+	</div>
 
 
 
-	<div id="contactform">
+	 <div id="contactform">
 		<form action="public/php/sendmail.php" method="post">
 			<input type="text" class="terminal-light-green" name="name" id="name" placeholder="YOUR NAME*" required>
 			<input type="text" class="terminal-light-green" name="email" id="email" placeholder="EMAIL ADDRESS*"
@@ -172,20 +209,40 @@ you@flaresoftware: ~$ show contact_form
 			<input class="terminal-light-green" type="submit" name="submit" value="SEND">
 			<span class="g-recaptcha" data-sitekey="6LcagOoUAAAAAIiDPdH-dizMmW1PMo1Cr3rG_ZV0"></span>
 		</form>
-	</div>
-
-
-	<div id="footerImageSection">
-		<img class="full-width-img height-auto" src="public/images/satellite-computer.jpg"
-			alt="Flare Software satellite computer" width="300" height="319" />
-	</div>
-
+	</div> -->
 
 	<div class="copyright">
-		<p class="terminal-text terminal-light-green">Copyright (c) 2016-2024 Flare Software LC, All Rights Reserved.
+		<p class="terminal-text terminal-light-green">
+			Copyright (c) 2010-2025 Flare Software LC, All Rights Reserved.
 		</p>
 	</div>
 
+	<script>
+		function navswitch() {
+			var x = document.getElementById('menuiconul');
+			if (x.style.display === 'block') {
+				x.style.display = 'none';
+			} else {
+				x.style.display = 'block';
+			}
+		}
+
+		fetch('https://1.1.1.1/cdn-cgi/trace')
+			.then(response => response.text())
+			.then(data => {
+				const lines = data.trim().split('\n');
+				const info = {};
+				lines.forEach(line => {
+					const [key, value] = line.split('=');
+					info[key] = value;
+				});
+
+				document.getElementById('ipinfo').textContent = `${info.ip}`;
+			})
+			.catch(() => {
+				document.getElementById('ipinfo').textContent = '10.80.00.85';
+			});
+	</script>
 
 </body>
 

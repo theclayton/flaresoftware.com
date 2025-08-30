@@ -6,7 +6,9 @@
   max-width: 100%;
 }
 
-
+.no-text-decoration {
+    text-decoration: none;
+}
 
 /* SECTION 1: */
 #section1 {
