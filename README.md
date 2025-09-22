@@ -1,5 +1,3 @@
 # flaresoftware.com
 
-The homepage for Flare Software LC. Built with good ol' plain HTML, CSS, JavaScript and PHP. I hand drew all the images and included several pieces of ACII art.
-
-*I have removed all PHP for security reasons. 
+The homepage for Flare Software LC. Built with plain old HTML, CSS, and JavaScript. The graphics on the home page are my attempt at creating "hacker art". Please enjoy them thoroughly.
